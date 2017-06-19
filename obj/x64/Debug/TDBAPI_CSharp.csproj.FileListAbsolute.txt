@@ -1,0 +1,5 @@
+D:\github\WindTDB3.0\bin\x64\Debug\TDBAPI_CSharp.exe
+D:\github\WindTDB3.0\bin\x64\Debug\TDBAPI_CSharp.pdb
+D:\github\WindTDB3.0\obj\x64\Debug\TDBAPI_CSharp.csprojResolveAssemblyReference.cache
+D:\github\WindTDB3.0\obj\x64\Debug\TDBAPI_CSharp.exe
+D:\github\WindTDB3.0\obj\x64\Debug\TDBAPI_CSharp.pdb

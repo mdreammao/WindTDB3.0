@@ -1,0 +1,6 @@
+Log file created at: 2017/06/19 13:20:04
+Running on machine: LAPTOP-PE3PNVH9
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0619 13:20:04.657788 10596 HHNetFrameProcessor_TDBAPI.cpp:35] ~CHHNetFrameProcessor_TDBAPI()
+E0619 13:20:04.665905 10596 TDBAPI.cpp:200] Failed to Connect TDB Server.IP£º114.80.154.34;Port£º6271
+I0619 13:20:04.669819 10596 SourceManager.cpp:30] SourceManager::~SourceManager
