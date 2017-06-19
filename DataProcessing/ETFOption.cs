@@ -127,7 +127,7 @@ namespace myWindAPI
                     //若没有记录数据，需要重新记录
                     //若数据存在，存储数据,否则需要跳过
                     {
-                        TDBReq reqTick = new TDBReq(ETFOption.contractName, "SH-2-0",today);
+                        TDBReq reqTick = new TDBReq(ETFOption.contractName, "SH-1-1",today);
                         TDBTick[] tickArr;
                         TDBErrNo nErrInner = tdbSource.GetTick(reqTick, out tickArr);
                         if (tickArr.Length == 0)
