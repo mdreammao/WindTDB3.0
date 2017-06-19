@@ -60,8 +60,19 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WAPIWrapperCSharp">
+      <HintPath>.\WAPIWrapperCSharp.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Application\CsvApplication.cs" />
+    <Compile Include="Application\MyApplication.cs" />
+    <Compile Include="Application\OptionInformation.cs" />
+    <Compile Include="Application\SqlApplication.cs" />
+    <Compile Include="Application\TradeDays.cs" />
+    <Compile Include="DataProcessing\ETFOption.cs" />
+    <Compile Include="DataProcessing\Stocks.cs" />
+    <Compile Include="Model\StructTypePool.cs" />
     <Compile Include="WindApi\LibTDBWrap.cs" />
     <Compile Include="WindApi\LibWrapHelper.cs" />
     <Compile Include="Program.cs" />
@@ -69,9 +80,7 @@
     <Compile Include="WindApi\TDBDataSource.cs" />
     <Compile Include="WindApi\TDBVersion.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DataProcessing\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -7,6 +7,7 @@ using System.Diagnostics;
 using System.Threading;
 using TDBAPI;
 using TDBAPIImp;
+using myWindAPI;
 
 namespace Program
 {
@@ -59,7 +60,10 @@ namespace Program
                     Console.WriteLine("market:{0}, dyndate:{1}", loginRes.m_strMarkets[i], loginRes.m_nDynDates[i]);
                 }
             }
+            ETFOption myStore5 = new ETFOption("SH", 20150209, 20151231);
+            //Stocks myStore6 = new Stocks("SH", 20130601, 20160623);
 
+            #region 测试内容
             Thread.Sleep(3000);//等待3秒，以便查看输出
             //测试输出代码表
             {
@@ -292,6 +296,7 @@ namespace Program
                     PrintIntArr(orderQueueArr[i].m_nABVolume);
                 }
             }
+#endregion
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine();
