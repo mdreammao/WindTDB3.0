@@ -65,6 +65,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Application\Configuration.cs" />
     <Compile Include="Application\CsvApplication.cs" />
     <Compile Include="Application\MyApplication.cs" />
     <Compile Include="Application\OptionInformation.cs" />
