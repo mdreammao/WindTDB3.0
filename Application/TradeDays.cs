@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using WAPIWrapperCSharp;
-using WindCommon;
 using System.Data;
 using System.Globalization;
 

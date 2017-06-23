@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using WAPIWrapperCSharp;
-using WindCommon;
 using System.Data;
 
 namespace myWindAPI
@@ -143,19 +142,19 @@ namespace myWindAPI
                 {
                     WindData optionToday = w.wset("OptionChain", "date=" + today.ToString() + ";us_code=" + Configuration.underlyingAsset + ";option_var=;month=全部;call_put=全部");
                     object[] optionList = optionToday.data as object[];
-                    int num = optionList.Length / 13;
+                    int num = optionList.Length / 14;
                     for (int i = 0; i < num; i++)
                     {
                         optionFormat option = new optionFormat();
-                        string codeString = (string)optionList[i * 13 + 4 - 1];
+                        string codeString = (string)optionList[i * 14 + 4 - 1];
                         option.optionCode = Convert.ToInt32(codeString.Substring(0, 8));
                         option.market = codeString.Substring(9, 2);
-                        option.optionName = (string)optionList[i * 13 + 5 - 1];
-                        option.executeType = (string)optionList[i * 13 + 6 - 1];
-                        option.strike = (double)optionList[i * 13 + 7 - 1];
-                        option.optionType = (string)optionList[i * 13 + 9 - 1];
-                        option.startDate = TradeDays.DateTimeToInt((DateTime)optionList[i * 13 + 10 - 1]);
-                        option.endDate = TradeDays.DateTimeToInt((DateTime)optionList[i * 13 + 11 - 1]);
+                        option.optionName = (string)optionList[i * 14 + 5 - 1];
+                        option.executeType = (string)optionList[i * 14 + 6 - 1];
+                        option.strike = (double)optionList[i * 14 + 7 - 1];
+                        option.optionType = (string)optionList[i * 14 + 9 - 1];
+                        option.startDate = TradeDays.DateTimeToInt((DateTime)optionList[i * 14 + 10 - 1]);
+                        option.endDate = TradeDays.DateTimeToInt((DateTime)optionList[i * 14 + 11 - 1]);
                         if (myOptionList.ContainsKey(option.optionCode) == false)
                         {
                             myOptionList.Add(option.optionCode, option);

@@ -21,7 +21,7 @@ namespace myWindAPI
         /// <summary>
         /// 连接上交所TDB数据库的参数。
         /// </summary>
-        public TDBsource mySource = new TDBsource("114.80.154.34", "6271", "W59289091558", "85638978");
+        public TDBsource mySource = new TDBsource("114.80.154.34", "6270", "W59289091558", "85638978");
         /// <summary>
         /// 记录上交所股票的列表。
         /// </summary>
@@ -74,8 +74,12 @@ namespace myWindAPI
                 Console.WriteLine("Connect Success!");
                 myTradeDays = new TradeDays(startDate, endDate);
                 Console.WriteLine("Tradedays Collect!");
-                stockList = GetStockList("000016.SH");
-                Console.WriteLine("stockList Collect!");
+                //stockList = GetStockList("000016.SH");
+                //Console.WriteLine("stockList Collect!");
+                stockList.Add(new stockFormat { code = "510050", market = "sh", name = "上证50ETF" });
+                stockList.Add(new stockFormat { code = "510300", market = "sh", name = "上证300ETF" });
+                stockList.Add(new stockFormat { code = "510180", market = "sh", name = "上证180ETF" });
+
                 logName = DateTime.Now.ToString() + "_log.txt";
                 logName = logName.Replace("/", "_");
                 logName = logName.Replace(" ", "_");
@@ -106,8 +110,8 @@ namespace myWindAPI
                     int yesterday = TradeDays.GetPreviousTradeDay(today);
                     string todayDataBase = "TradeMarket" + (today / 100).ToString();
                     //string todayConnectString = "server=192.168.38.217;database=" + todayDataBase + ";uid =sa;pwd=maoheng0;";
-                    //string todayConnectString = "server=(local);database=" + todayDataBase + ";Integrated Security=true;";
-                    string todayConnectString = "server=192.168.38.209;database=" + todayDataBase + ";uid =sa;pwd=280514;";
+                    string todayConnectString = "server=(local);database=" + todayDataBase + ";Integrated Security=true;";
+                   // string todayConnectString = "server=192.168.38.209;database=" + todayDataBase + ";uid =sa;pwd=280514;";
                     if (SqlApplication.CheckDataBaseExist(todayDataBase, orignalConnectString) == false)
                     {
                         maxRecordDate = 0;
@@ -123,7 +127,7 @@ namespace myWindAPI
                     //若没有记录数据，需要重新记录
                     //若数据存在，存储数据,否则需要跳过
                     {
-                        TDBReq reqTick = new TDBReq(stock.code + "." + stock.market, "SH-2-0", today);
+                        TDBReq reqTick = new TDBReq(stock.code + "." + stock.market, "SH-1-0", today);
                         TDBTick[] tickArr;
                         TDBErrNo nErrInner = tdbSource.GetTick(reqTick, out tickArr);
 
@@ -460,7 +464,7 @@ namespace myWindAPI
             {
                 conn.Open();//打开数据库  
                 SqlCommand cmd = conn.CreateCommand();
-                cmd.CommandText = "CREATE DATABASE " + dataBaseName + " ON PRIMARY (NAME = '" + dataBaseName + "', FILENAME = 'E:\\HFDB\\" + dataBaseName + ".dbf',SIZE = 1024MB,MaxSize = 512000MB,FileGrowth = 1024MB) LOG ON (NAME = '" + dataBaseName + "Log',FileName = 'E:\\HFDB\\" + dataBaseName + ".ldf',Size = 20MB,MaxSize = 1024MB,FileGrowth = 10MB)";
+                cmd.CommandText = "CREATE DATABASE " + dataBaseName + " ON PRIMARY (NAME = '" + dataBaseName + "', FILENAME = 'G:\\HFDB\\" + dataBaseName + ".dbf',SIZE = 1024MB,MaxSize = 512000MB,FileGrowth = 1024MB) LOG ON (NAME = '" + dataBaseName + "Log',FileName = 'G:\\HFDB\\" + dataBaseName + ".ldf',Size = 20MB,MaxSize = 1024MB,FileGrowth = 10MB)";
                 try
                 {
                     cmd.ExecuteReader();

@@ -20,7 +20,7 @@ namespace myWindAPI
         /// <summary>
         /// 连接万德上交所TDB数据库的参数。
         /// </summary>
-        public TDBsource mySource = new TDBsource("114.80.154.34", "10061", "TD5928909016", "14158777");
+        public TDBsource mySource = new TDBsource("114.80.154.34", "6270", "W59289091558", "85638978");
         /// <summary>
         /// 记录全市场期权信息的列表。
         /// </summary>
@@ -103,15 +103,21 @@ namespace myWindAPI
                 int maxRecordDate = 0;
                 foreach (int today in myTradeDays.myTradeDays)
                 {
-                    if (today > ETFOption.endDate || today<ETFOption.startDate)
-                    //如果在期货交割之后，不再进行记录
+                    if (today > ETFOption.endDate)
+                    //如果在期权交割之后，不再进行记录
                     {
                         break;
+                    }
+                    if (today<ETFOption.startDate)
+                    //如果在期权开始之前，跳过当日
+                    {
+                        continue;
                     }
                     int yesterday = TradeDays.GetPreviousTradeDay(today);
                     string todayDataBase = "TradeMarket" + (today / 100).ToString();
                     //string todayConnectString = "server=192.168.38.217;database=" + todayDataBase + ";uid =sa;pwd=maoheng0;";
                     string todayConnectString = "server=(local);database=" + todayDataBase + ";Integrated Security=true;";
+
                     if (SqlApplication.CheckDataBaseExist(todayDataBase, orignalConnectString) == false)
                     {
                         maxRecordDate = 0;
@@ -567,6 +573,10 @@ namespace myWindAPI
             {
                 ETFOptionFormat option = new ETFOptionFormat();
                 option.code = item.Value.optionCode.ToString();
+                //if (item.Key<=10000100)
+                //{
+                //    continue;
+                //}
                 option.contractName= item.Value.optionCode.ToString() + "." + item.Value.market.ToUpper();
                 option.startDate = item.Value.startDate;
                 option.endDate = item.Value.endDate;

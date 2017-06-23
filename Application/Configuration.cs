@@ -53,7 +53,7 @@ namespace myWindAPI
         /// <summary>
         /// 上交所及中金所连接信息。
         /// </summary>
-        public static TDBsource SHsource = new TDBsource("114.80.154.34", "6271", "W59289091558", "85638978");
+        public static TDBsource SHsource = new TDBsource("114.80.154.34", "6270", "W59289091558", "85638978");
         /// <summary>
         /// 商品期货连接信息。
         /// </summary>

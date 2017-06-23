@@ -1,0 +1,10 @@
+Log file created at: 2017/06/21 09:11:41
+Running on machine: MAOHENGW
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0621 09:11:41.437027 11816 HHNetFrameProcessor_TDBAPI.cpp:201] Connect Success£¬login...
+I0621 09:11:41.438027 11816 HHNetFrameProcessor_TDBAPI.cpp:275] login...User:W59289091558;Pwd:85638978;version:0x6350
+I0621 09:11:41.491030 12612 HHNetFrameProcessor_TDBAPI.cpp:403] login success£¬requesting codetable!
+I0621 09:11:41.491030 12612 HHNetFrameProcessor_TDBAPI.cpp:412] requesting codetable...market:SH-1-0
+I0621 09:11:43.641154 12612 HHNetFrameProcessor_TDBAPI.cpp:427] codetable arrived! Market£ºSH-1-0
+E0621 09:11:43.729158 11816 HHNetFrameProcessor_TDBAPI.cpp:1121] requesting Tick: NO_AUTHORIZED_MARKET£¡
+E0621 09:11:48.227416 11816 HHNetFrameProcessor_TDBAPI.cpp:1121] requesting Tick: NO_AUTHORIZED_MARKET£¡

@@ -1,0 +1,13 @@
+Log file created at: 2017/06/21 08:17:49
+Running on machine: MAOHENGW
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0621 08:17:49.693182 10148 HHNetFrameProcessor_TDBAPI.cpp:201] Connect Success，login...
+I0621 08:17:49.694182 10148 HHNetFrameProcessor_TDBAPI.cpp:275] login...User:W59289091558;Pwd:85638978;version:0x6350
+I0621 08:17:49.769186  4888 HHNetFrameProcessor_TDBAPI.cpp:403] login success，requesting codetable!
+I0621 08:17:49.769186  4888 HHNetFrameProcessor_TDBAPI.cpp:412] requesting codetable...market:SH-1-0
+I0621 08:17:51.844305  4888 HHNetFrameProcessor_TDBAPI.cpp:427] codetable arrived! Market：SH-1-0
+I0621 08:18:06.334133 10148 HHNetFrameProcessor_TDBAPI.cpp:201] Connect Success，login...
+I0621 08:18:06.334133 10148 HHNetFrameProcessor_TDBAPI.cpp:275] login...User:W59289091558;Pwd:85638978;version:0x6350
+E0621 08:18:06.340134  8144 HHNetFrameProcessor_TDBAPI.cpp:371] login failed,ErrInfo(TDB_LOGIN_FAILED):该用户已经登录！
+I0621 08:18:06.344135 10148 HHNetFrameProcessor_TDBAPI.cpp:35] ~CHHNetFrameProcessor_TDBAPI()
+E0621 08:18:06.344135 10148 TDBAPI.cpp:210] Login Fail,reason:该用户已经登录！

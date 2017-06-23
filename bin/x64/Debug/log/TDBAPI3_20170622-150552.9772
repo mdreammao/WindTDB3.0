@@ -1,0 +1,8 @@
+Log file created at: 2017/06/22 15:05:52
+Running on machine: MAOHENGW
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0622 15:05:52.112293 16460 HHNetFrameProcessor_TDBAPI.cpp:35] ~CHHNetFrameProcessor_TDBAPI()
+E0622 15:05:52.113293 16460 TDBAPI.cpp:200] Failed to Connect TDB Server.IP£º114.80.154.34;Port£º6270
+I0622 15:05:52.140295 16460 HHNetFrameProcessor_TDBAPI.cpp:35] ~CHHNetFrameProcessor_TDBAPI()
+E0622 15:05:52.140295 16460 TDBAPI.cpp:200] Failed to Connect TDB Server.IP£º114.80.154.34;Port£º6270
+I0622 15:27:49.678654  8576 SourceManager.cpp:30] SourceManager::~SourceManager

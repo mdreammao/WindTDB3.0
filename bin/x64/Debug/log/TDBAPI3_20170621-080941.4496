@@ -1,0 +1,9 @@
+Log file created at: 2017/06/21 08:09:41
+Running on machine: MAOHENGW
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0621 08:09:41.325248  5040 HHNetFrameProcessor_TDBAPI.cpp:201] Connect Success，login...
+I0621 08:09:41.328249  5040 HHNetFrameProcessor_TDBAPI.cpp:275] login...User:W59289091558;Pwd:85638978;version:0x6350
+E0621 08:09:41.419255  9072 HHNetFrameProcessor_TDBAPI.cpp:371] login failed,ErrInfo(TDB_LOGIN_FAILED):欢迎使用宏汇TDB系统!
+I0621 08:09:41.427254  5040 HHNetFrameProcessor_TDBAPI.cpp:35] ~CHHNetFrameProcessor_TDBAPI()
+E0621 08:09:41.427254  5040 TDBAPI.cpp:210] Login Fail,reason:欢迎使用宏汇TDB系统!
+I0621 08:11:14.731591  9360 SourceManager.cpp:30] SourceManager::~SourceManager

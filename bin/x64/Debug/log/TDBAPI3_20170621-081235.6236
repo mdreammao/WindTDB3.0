@@ -1,0 +1,13 @@
+Log file created at: 2017/06/21 08:12:35
+Running on machine: MAOHENGW
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0621 08:12:35.131191  8576 HHNetFrameProcessor_TDBAPI.cpp:201] Connect Success£¬login...
+I0621 08:12:35.131191  8576 HHNetFrameProcessor_TDBAPI.cpp:275] login...User:W59289091558;Pwd:85638978;version:0x6350
+I0621 08:12:35.187193  6816 HHNetFrameProcessor_TDBAPI.cpp:403] login success£¬requesting codetable!
+I0621 08:12:35.187193  6816 HHNetFrameProcessor_TDBAPI.cpp:412] requesting codetable...market:SH-1-0
+I0621 08:12:37.505326  6816 HHNetFrameProcessor_TDBAPI.cpp:427] codetable arrived! Market£ºSH-1-0
+I0621 08:12:53.564244  8576 HHNetFrameProcessor_TDBAPI.cpp:518] requesting codetable:market:SH-1-0
+I0621 08:13:46.407266  7984 SourceManager.cpp:30] SourceManager::~SourceManager
+I0621 08:13:46.407266  7984 HHNetFrameProcessor_TDBAPI.cpp:227] TDB_Close...
+I0621 08:13:46.407266  7984 HHNetFrameProcessor_TDBAPI.cpp:235] DisconnectIPServer...
+I0621 08:13:46.409267  7984 HHNetFrameProcessor_TDBAPI.cpp:35] ~CHHNetFrameProcessor_TDBAPI()

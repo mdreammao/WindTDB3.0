@@ -1,0 +1,11 @@
+Log file created at: 2017/06/21 13:03:49
+Running on machine: MAOHENGW
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0621 13:03:49.879688 11640 HHNetFrameProcessor_TDBAPI.cpp:201] Connect Success£¬login...
+I0621 13:03:49.880688 11640 HHNetFrameProcessor_TDBAPI.cpp:275] login...User:W59289091558;Pwd:85638978;version:0x6350
+I0621 13:03:49.940692  5864 HHNetFrameProcessor_TDBAPI.cpp:403] login success£¬requesting codetable!
+I0621 13:03:49.940692  5864 HHNetFrameProcessor_TDBAPI.cpp:412] requesting codetable...market:SH-1-0
+I0621 13:03:49.940692  5864 HHNetFrameProcessor_TDBAPI.cpp:412] requesting codetable...market:SH-1-1
+I0621 13:03:51.764796  5864 HHNetFrameProcessor_TDBAPI.cpp:427] codetable arrived! Market£ºSH-1-0
+I0621 13:03:53.421891  5864 HHNetFrameProcessor_TDBAPI.cpp:427] codetable arrived! Market£ºSH-1-1
+W0621 13:04:44.753828 11640 HHNetFrameProcessor_TDBAPI.cpp:1224] requesting Tick: NO_CODE_TABLE.Market:SH-1-0, Code:10000001.sh

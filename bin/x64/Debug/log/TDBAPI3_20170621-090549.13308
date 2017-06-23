@@ -1,0 +1,23 @@
+Log file created at: 2017/06/21 09:05:49
+Running on machine: MAOHENGW
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0621 09:05:49.227882 12756 HHNetFrameProcessor_TDBAPI.cpp:201] Connect Success£¬login...
+I0621 09:05:49.228883 12756 HHNetFrameProcessor_TDBAPI.cpp:275] login...User:W59289091558;Pwd:85638978;version:0x6350
+I0621 09:05:49.283885 13268 HHNetFrameProcessor_TDBAPI.cpp:403] login success£¬requesting codetable!
+I0621 09:05:49.283885 13268 HHNetFrameProcessor_TDBAPI.cpp:412] requesting codetable...market:SH-1-0
+I0621 09:05:50.934979 13268 HHNetFrameProcessor_TDBAPI.cpp:427] codetable arrived! Market£ºSH-1-0
+I0621 09:06:04.292743 12756 HHNetFrameProcessor_TDBAPI.cpp:518] requesting codetable:market:SH-1-0
+I0621 09:06:17.007470 12756 HHNetFrameProcessor_TDBAPI.cpp:518] requesting codetable:market:
+I0621 09:06:20.098647 12756 HHNetFrameProcessor_TDBAPI.cpp:597] requesting code information, code: 600000.shmarket:SH-2-0
+I0621 09:06:20.099647 12756 HHNetFrameProcessor_TDBAPI.cpp:597] requesting code information, code: xxxxyyy.shmarket:SH-2-0
+E0621 09:06:23.102819 12756 HHNetFrameProcessor_TDBAPI.cpp:761] requesting K-Line: NO_AUTHORIZED_MARKET£¡
+E0621 09:06:26.111991 12756 HHNetFrameProcessor_TDBAPI.cpp:1121] requesting Tick: NO_AUTHORIZED_MARKET£¡
+E0621 09:06:29.115164 12756 HHNetFrameProcessor_TDBAPI.cpp:1121] requesting Tick: NO_AUTHORIZED_MARKET£¡
+E0621 09:06:32.117336 12756 HHNetFrameProcessor_TDBAPI.cpp:1121] requesting Tick: NO_AUTHORIZED_MARKET£¡
+E0621 09:06:35.124507 12756 HHNetFrameProcessor_TDBAPI.cpp:1387] requesting Transaction: NO_AUTHORIZED_MARKET£¡£¡
+E0621 09:06:38.131680 12756 HHNetFrameProcessor_TDBAPI.cpp:1645] requesting Order: NO_AUTHORIZED_MARKET£¡£¡
+E0621 09:06:41.138851 12756 HHNetFrameProcessor_TDBAPI.cpp:1905] requesting OrderQueue: NO_AUTHORIZED_MARKET£¡£¡
+I0621 09:07:12.803663 12756 HHNetFrameProcessor_TDBAPI.cpp:227] TDB_Close...
+I0621 09:07:12.803663 12756 HHNetFrameProcessor_TDBAPI.cpp:235] DisconnectIPServer...
+I0621 09:07:12.804662 12756 HHNetFrameProcessor_TDBAPI.cpp:35] ~CHHNetFrameProcessor_TDBAPI()
+I0621 09:07:12.861665  9800 SourceManager.cpp:30] SourceManager::~SourceManager

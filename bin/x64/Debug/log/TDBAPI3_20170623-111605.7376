@@ -1,0 +1,19 @@
+Log file created at: 2017/06/23 11:16:05
+Running on machine: MAOHENGW
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0623 11:16:05.759737  8412 HHNetFrameProcessor_TDBAPI.cpp:201] Connect Success，login...
+I0623 11:16:05.759737  8412 HHNetFrameProcessor_TDBAPI.cpp:275] login...User:W59289091558;Pwd:85638978;version:0x6350
+I0623 11:16:05.816740 10428 HHNetFrameProcessor_TDBAPI.cpp:403] login success，requesting codetable!
+I0623 11:16:05.816740 10428 HHNetFrameProcessor_TDBAPI.cpp:412] requesting codetable...market:SH-1-0
+I0623 11:16:05.816740 10428 HHNetFrameProcessor_TDBAPI.cpp:412] requesting codetable...market:SH-1-1
+I0623 11:16:07.622843 10428 HHNetFrameProcessor_TDBAPI.cpp:427] codetable arrived! Market：SH-1-0
+I0623 11:16:08.614899 10428 HHNetFrameProcessor_TDBAPI.cpp:427] codetable arrived! Market：SH-1-1
+W0623 11:17:53.909922 10428 HHNetFrameProcessor_TDBAPI.cpp:115] 网络异常，连接中断
+I0623 11:17:53.913923 10428 HHNetFrameProcessor_TDBAPI.cpp:35] ~CHHNetFrameProcessor_TDBAPI()
+I0623 11:19:30.763461  8412 HHNetFrameProcessor_TDBAPI.cpp:201] Connect Success，login...
+I0623 11:19:30.763461  8412 HHNetFrameProcessor_TDBAPI.cpp:275] login...User:W59289091558;Pwd:85638978;version:0x6350
+I0623 11:19:30.833465 10912 HHNetFrameProcessor_TDBAPI.cpp:403] login success，requesting codetable!
+I0623 11:19:30.833465 10912 HHNetFrameProcessor_TDBAPI.cpp:412] requesting codetable...market:SH-1-0
+I0623 11:19:30.833465 10912 HHNetFrameProcessor_TDBAPI.cpp:412] requesting codetable...market:SH-1-1
+I0623 11:19:32.921586 10912 HHNetFrameProcessor_TDBAPI.cpp:427] codetable arrived! Market：SH-1-0
+I0623 11:19:34.508677 10912 HHNetFrameProcessor_TDBAPI.cpp:427] codetable arrived! Market：SH-1-1
